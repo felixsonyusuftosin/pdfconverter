@@ -5,3 +5,6 @@ venv
 **venv
 __pycache__
 .DS_Store
+**.DS_Store
+src/output_files/pdf/**
+src/output_files/html/**
