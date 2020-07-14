@@ -20,15 +20,15 @@ options = {
 
 def compile_pdf(filename):
     html_file = os.path.join(os.path.dirname(
-        __file__), "output_files/{}.html".format(filename))
+        __file__), "output_files/html/{}.html".format(filename))
     out_pdf = os.path.join(os.path.dirname(__file__),
-                           "output_files/{}.pdf".format(filename))
+                           "output_files/pdf/{}.pdf".format(filename))
     pdfkit.from_file(html_file, out_pdf, options)
 
 
 def transform(items_to_transform,  filename):
     output_file = os.path.join(os.path.dirname(
-        __file__), "output_files/{}.html".format(filename))
+        __file__), "output_files/html/{}.html".format(filename))
     print(output_file)
     f = open(output_file, "wb")
     f.write(construct_html(items_to_transform))
