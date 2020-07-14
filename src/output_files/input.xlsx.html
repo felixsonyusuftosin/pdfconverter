@@ -1,0 +1,328 @@
+
+  <!DOCTYPE html>
+  <html>
+  <head>
+    
+     <style>
+    body, html{
+      padding: 0px;
+      margin: 0px;
+      height: 100%;
+      font-family: sans-serif;
+    }
+    html { 
+     zoom: 0.7; 
+    -moz-transform: scale(0.7); 
+    -moz-transform-origin: 0 0;
+    }
+    .main{
+      min-height: 100%;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      padding: 20px;
+      display:block
+    }
+    .table {
+      border: solid 1px #000;
+      display:inline-block;
+    }
+
+    body, html, .main, .table {
+     overflow: visible;
+     }
+    .row {
+      border-bottom:solid 1px #000;
+       -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+    .header {
+        font-size: 2rem;
+        text-align: center;
+       justify-content:center;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+        align-items: center;
+        font-weight: 400;
+        margin: 20 0px;
+        padding: 0;
+    }
+    .info { 
+      width: 400px;
+      margin-right: auto;
+      margin-bottom: 20px;
+      height: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      border: solid 1px #000;
+      border-bottom: none;
+      -webkit-box-orient:vertical;
+      -webkit-box-direction:normal;
+      -ms-flex-direction:column;
+      flex-direction: column;
+      }
+    .row-info {
+      padding: 10px 10px;
+      margin: 0;
+      width: 400px;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      border-bottom:solid 1px #000;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      }
+    .col { 
+      width: 120px;
+      padding: 7px 10px;
+      -webkit-box-sizing:border-box;
+      box-sizing:border-box;
+      overflow:hidden;
+      min-height: 20px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align:center;
+      -ms-flex-align:center;
+      align-items:center;
+      border-right:solid 1px #000;
+      justify-content:center;
+      -webkit-box-pack:center;
+      -ms-flex-pack:center;
+      font-size: 0.9rem;
+      text-align:center;
+      }
+    .main-head {
+      background-color: #FEFE87;
+      font-weight: 600;
+      }
+    .sub-head {
+      background-color: #608BCE;
+      font-weight: 600;
+      padding-top:5px;
+      -webkit-box-align:flex-start;
+      -ms-flex-align:flex-start;
+      align-items:flex-start;
+      }
+    .rest-row {
+      padding-bottom:5px;
+      -webkit-box-align:flex-end;
+      -ms-flex-align:flex-end;
+      align-items:flex-end;
+      }
+    .very-high-pri { 
+      background-color: #EB3323;
+    }
+    .high-pri {
+        background-color: #F19837;
+    }
+    .low-pri {
+      background-color: #50AE5B;
+    }
+    .medium-pri { 
+      background-color: #FEFF54;
+    }
+    .slim-row { 
+      font-size: 0.8;
+      padding: 3px 10px;
+     }
+    .slim-row { 
+      font-size: 0.8;
+      padding: 3px 10px;
+     }
+
+   </style>
+  
+  </head>
+
+  <body>
+    <section class="main">
+        <h2 class="header">2020 Person Detail</h2>
+        <div class="info">
+          <p class="row-info">GROUP NAME: Houston Texas</p>
+          <p class="row-info">PCP: Manveen Dharni</p>
+          <p class="row-info">As of Date: 06-01-2020</p>
+        </div>
+      <div class="table">
+       <div class="row">
+         	<div class="col main-head">Number of Records</div>
+	<div class="col main-head">Not Assessed</div>
+	<div class="col main-head">Assessed & Diagnosed</div>
+	<div class="col main-head">Closed %</div>
+	<div class="col main-head">Target Goal %</div>
+	<div class="col main-head">Variance to Goal %</div>
+	<div class="col main-head">Needed for Goal</div>
+
+       </div>
+       <div class="row">
+        	<div class="col slim-row">242.0</div>
+	<div class="col slim-row">145.0</div>
+	<div class="col slim-row">97.0</div>
+	<div class="col slim-row">40%</div>
+	<div class="col slim-row">70%</div>
+	<div class="col slim-row">30%</div>
+	<div class="col slim-row">72.0</div>
+
+       </div>
+      <div class="row">
+        	<div class="col sub-head">Brand</div>
+	<div class="col sub-head">ID</div>
+	<div class="col sub-head">Member Name</div>
+	<div class="col sub-head">DOB</div>
+	<div class="col sub-head">Risk Score</div>
+	<div class="col sub-head">HCC</div>
+	<div class="col sub-head">Condition</div>
+	<div class="col sub-head">Suspect Detail</div>
+	<div class="col sub-head">Prev Coded</div>
+	<div class="col sub-head">MLR %</div>
+	<div class="col sub-head">Last Visit During Six Months</div>
+	<div class="col sub-head">AssessmentStatus</div>
+	<div class="col sub-head">Priority</div>
+
+       </div>
+        <div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M092971</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1953-06-04</div>
+	<div class="col rest-row">0.790</div>
+	<div class="col rest-row">096</div>
+	<div class="col rest-row">SPECIFIED HEART ARRHYTHMIAS</div>
+	<div class="col rest-row">I482: Chronic atrial fibrillation</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">146.0%</div>
+	<div class="col rest-row">2020-04-15</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row very-high-pri">Very High Priority</div>
+</div>
+<div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M092971</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1953-06-04</div>
+	<div class="col rest-row">0.790</div>
+	<div class="col rest-row">108</div>
+	<div class="col rest-row">VASCULAR DISEASE</div>
+	<div class="col rest-row">I712: Thoracic aortic aneurysm, without rupture</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">146.0%</div>
+	<div class="col rest-row">2020-04-15</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row very-high-pri">Very High Priority</div>
+</div>
+<div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M092971</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1953-06-04</div>
+	<div class="col rest-row">0.790</div>
+	<div class="col rest-row">138</div>
+	<div class="col rest-row"></div>
+	<div class="col rest-row">N183: Chronic kidney disease, stage 3 (moderate)</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">146.0%</div>
+	<div class="col rest-row">2020-04-15</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row very-high-pri">Very High Priority</div>
+</div>
+<div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M071439</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1952-04-11</div>
+	<div class="col rest-row">0.524</div>
+	<div class="col rest-row">085</div>
+	<div class="col rest-row">CONGESTIVE HEART FAILURE</div>
+	<div class="col rest-row">I110: Hypertensive heart disease with heart failure</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">193.0%</div>
+	<div class="col rest-row">2020-03-24</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row very-high-pri">Very High Priority</div>
+</div>
+<div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M071439</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1952-04-11</div>
+	<div class="col rest-row">0.524</div>
+	<div class="col rest-row">108</div>
+	<div class="col rest-row">VASCULAR DISEASE</div>
+	<div class="col rest-row">I739: Peripheral vascular disease, unspecified</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">193.0%</div>
+	<div class="col rest-row">2020-03-24</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row very-high-pri">Very High Priority</div>
+</div>
+<div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M120771</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1948-10-09</div>
+	<div class="col rest-row">1.467</div>
+	<div class="col rest-row">035</div>
+	<div class="col rest-row">INFLAMMATORY BOWELDISEASE</div>
+	<div class="col rest-row">K5140: Inflammatory polyps of colon without complications</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">87.0%</div>
+	<div class="col rest-row">2020-02-19</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row medium-pri">Medium</div>
+</div>
+<div class="row">
+	<div class="col rest-row">PCP</div>
+	<div class="col rest-row">M428994</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1943-03-14</div>
+	<div class="col rest-row">0.800</div>
+	<div class="col rest-row">108</div>
+	<div class="col rest-row">VASCULAR DISEASE</div>
+	<div class="col rest-row">I7389: Other specified peripheral vascular diseases</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">131.0%</div>
+	<div class="col rest-row">2020-02-18</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row very-high-pri">Very High Priority</div>
+</div>
+<div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M608938</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1946-11-29</div>
+	<div class="col rest-row">1.703</div>
+	<div class="col rest-row">085</div>
+	<div class="col rest-row">CONGESTIVE HEART FAILURE</div>
+	<div class="col rest-row">I5030: Unspecified diastolic (congestive) heart failure</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">77.0%</div>
+	<div class="col rest-row">2020-02-11</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row medium-pri">Medium</div>
+</div>
+<div class="row">
+	<div class="col rest-row">MHP</div>
+	<div class="col rest-row">M608938</div>
+	<div class="col rest-row">Manveen Dharni</div>
+	<div class="col rest-row">1946-11-29</div>
+	<div class="col rest-row">1.703</div>
+	<div class="col rest-row">138</div>
+	<div class="col rest-row">CKD, MODERATE (STAGE 3)</div>
+	<div class="col rest-row">N183: Chronic kidney disease, stage 3 (moderate)</div>
+	<div class="col rest-row">Y</div>
+	<div class="col rest-row">77.0%</div>
+	<div class="col rest-row">2020-02-11</div>
+	<div class="col rest-row">Not Assessed</div>
+	<div class="col rest-row medium-pri">Medium</div>
+</div>
+
+      </div>
+    </section>
+  </body>
+  </html>
+  
